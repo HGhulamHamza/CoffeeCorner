@@ -1,0 +1,112 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./feature.html">FEATURES</a></li>
+                <li><a href="./service.html">SERVICES</a></li>
+                <li><a href="./footer.html">CONTACT </a></li>
+                <li><a href="./menu.html">MENU </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.jpg" id="menu">
+    </div>
+    <div class="mh"></div>
+    <h1 align="center">MENU</h1>
+    <p align="center">We have varities of coffees,sandwiches,burgers,wraps and juices<br>So,Come to us and enjoy your every bite</p>
+    <div class="Menu">
+       
+        <img class="m1" src="images/m1.jpg">
+        <img  class="m2" src="images/m2.jpg">
+        <img  class="m3" src="images/m3.jpg">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    menuBtn.onclick=function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right="0";
+            menu.src="images/close.png";
+        }
+        else{
+            sideNav.style.right="-250px";
+            menu.src="images/menu.jpg";
+        }
+     }
+     var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+});
+     
+    </script>
+    </body>
+    </html>

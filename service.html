@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./feature.html">FEATURES</a></li>
+                <li><a href="./service.html">SERVICES</a></li>
+                <li><a href="./footer.html">CONTACT </a></li>
+                <li><a href="./menu.html">MENU </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.jpg" id="menu">
+    </div>
+    <section id="service">
+            
+        <section id="feature">
+            
+            <div class="title-text">
+               <b> <p>SERVICES</p></b>
+                <h1>We have a better taste</h1>
+            </div> 
+            <div class="service-box">
+                <div class="single-service">
+                    <img src="images/cafe.jpg">
+                  <b> <h1>Taking Food Orders</h1></b><hr>
+                  <b> <h2>Taking orders of your food very fast and conviniently.</h2></b>
+                </div>
+               
+                <div class="single-service">
+                    <img src="images/cafe2.jpg">
+                    <b><h1>Clearing Tables</h1></b><hr>
+                   <b> <h2> We do not clear until everyone at the table has finished eating.<br> This is to allow the slowest eaters the time they need to finish.</h2>
+                </div></b>
+               
+                <div class="single-service">
+                    <img src="images/cafe3.jpg">
+                   <b> <h1>Good Customer Service During The Meal</h1></b><hr>
+                  <b><h2>After the plates are delivered the servers are still working.If there is a real problem, this is the server’s opportunity to communicate with the kitchen and potentially fix it.
+                </h2></b>
+                </div>
+                <div class="single-service">
+                    <img src="images/cafe4.jpg">
+                    <b><h1>Creating Ambiance</h1></b><hr>
+                   <b> <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lighting sets the mood, music complements atmosphere, and decor reflects the restaurant's theme.</h2>
+                  </b>
+                </div>
+
+            </div>
+
+
+
+    </section>
+    
+    <script>
+        var menuBtn=document.getElementById("menuBtn")
+        var sideNav=document.getElementById("sideNav")
+        var menu=document.getElementById("menu")
+   
+        menuBtn.onclick=function(){
+           if(sideNav.style.right=="-250px"){
+               sideNav.style.right="0";
+               menu.src="images/close.png";
+           }
+           else{
+               sideNav.style.right="-250px";
+               menu.src="images/menu.jpg";
+           }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+       speed: 1000,
+       speedAsDuration: true
+   });
+        
+       </script>
+</body>
+</html>

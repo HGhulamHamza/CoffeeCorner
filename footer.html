@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+</head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./feature.html">FEATURES</a></li>
+                <li><a href="./service.html">SERVICES</a></li>
+                <li><a href="./footer.html">CONTACT </a></li>
+                <li><a href="./menu.html">MENU </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.jpg" id="menu">
+    </div>
+    <section id="footer">
+        <img src="images/wow.jpg" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>Come to Coffee Corner  Today!</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock"></i> Monday  to Saturday- 4pm to 11pm</p>
+                <p><i class="fa fa-clock"></i> Sunday- 10am to 2pm<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4pm to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>Fort Road,Cantonment,Peshawar,Pakistan<i class="fa fa-map-marker"></i></p>
+                <p>cofecorner@gmail.com<i class="fa fa-paper-plane"></i></p>
+                <p>(091) 3095624<i class="fa fa-phone"></i></p>
+            </div>
+            <div class="social-links">
+                <a class="social-link" href="https://www.facebook.com/Hafiz Hamza" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+            
+                <!-- Instagram -->
+                <a class="social-link" href="https://www.instagram.com/g_humzaa" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            
+                <!-- GitHub -->
+                <a class="social-link" href="https://github.com/HGhulamHamzaa" target="_blank">
+                    <img src="images/github-icon.png" alt="GitHub">
+                </a>
+            
+                <!-- LinkedIn -->
+                <a class="social-link" href="https://www.linkedin.com/in/ghulam-hamza-7921bb275/" target="_blank">
+                    <img src="images/linkdein-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+    <script>
+        var menuBtn=document.getElementById("menuBtn")
+        var sideNav=document.getElementById("sideNav")
+        var menu=document.getElementById("menu")
+   
+        menuBtn.onclick=function(){
+           if(sideNav.style.right=="-250px"){
+               sideNav.style.right="0";
+               menu.src="images/close.png";
+           }
+           else{
+               sideNav.style.right="-250px";
+               menu.src="images/menu.jpg";
+           }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+       speed: 1000,
+       speedAsDuration: true
+   });
+        
+       </script>
+
+</body>
+</html>
